@@ -1,0 +1,23 @@
+Coolors → اختار ألوان
+Google Fonts → اختار خط
+Dribbble → خذ أفكار
+Heroicons → أيقونات
+Flowbite → مكونات
+
+color: https://colorhunt.co/palette/fafcd6259f6c1e6b7f140303
+font: font-family: "Poppins", sans-serif;
+
+🎯 كيف تستخدم الألوان صح (مهم جدًا)
+🟢 Primary (#259F6C)
+الأزرار
+الروابط
+Hover
+🔵 Secondary (#1E6B7F)
+عناصر إضافية
+Borders
+Icons
+⚫ Background (#140303)
+خلفية الموقع كاملة
+🟡 Light (#FAFCD6)
+نصوص خفيفة
+خلفيات فاتحة

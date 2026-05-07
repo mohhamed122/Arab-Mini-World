@@ -1,0 +1,333 @@
+:root {
+  --primary: #259f6c;
+  --secondary: #1e6b7f;
+  --bg: #140303;
+  --card: #1c0a0a;
+  --light: #fafcd6;
+
+  --text: #ffffff;
+  --text-muted: #cccccc;
+}
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 12px 25px;
+
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+
+  width: 90%;
+  max-width: 1200px;
+
+  margin: 20px auto;
+
+  border-radius: 50px;
+  border: 1px solid var(--secondary);
+
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  z-index: 100;
+}
+
+/* LOGO */
+.logo {
+  margin-left: 10px;
+}
+
+/* LINKS */
+nav .links {
+  display: flex;
+  gap: 25px;
+}
+
+nav .links a {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.3s;
+  position: relative;
+}
+
+nav .links a:hover {
+  color: var(--primary);
+}
+nav .links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background: var(--primary);
+  transition: 0.3s;
+}
+
+nav .links a:hover::after {
+  width: 100%;
+}
+/*Hero Section*/
+#home {
+  height: 100vh;
+  background: url("img/bg1-mini.jpg") center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  text-align: center;
+  position: relative;
+}
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+#home .jj {
+  z-index: 33;
+  margin-left: 200px;
+}
+#home .jj {
+  color: var(--light);
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+#home .jj a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--primary);
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+#home .jj a:hover {
+  background-color: var(--secondary);
+}
+/*Groups Section*/
+#groups {
+  height: 100vh;
+  padding: 50px 20px;
+  text-align: center;
+}
+#groups h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.card {
+  border: 1px solid var(--secondary);
+  padding: 100px;
+  border-radius: 30px;
+}
+
+.card h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.card p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.card a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--primary);
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+.card a:hover {
+  background-color: var(--secondary);
+}
+
+.card.swalf {
+  background: url("img/bg3-mini-card.jpg") center/cover no-repeat;
+}
+
+.card.finder {
+  background: url("img/bg4-mini-card.jpg") center/cover no-repeat;
+}
+
+.card.pvp {
+  background: url("img/bg2-mini-card.jpg") center/cover no-repeat;
+}
+
+.card.maps {
+  background: url("img/bg5-mini-card.jpg") center/cover no-repeat;
+}
+.card {
+  position: relative;
+  border: 1px solid var(--secondary);
+  padding: 100px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+.card h3,
+.card p,
+.card a {
+  position: relative;
+  z-index: 2;
+}
+#about {
+  padding: 50px 10px;
+  text-align: center;
+  height: 50vh;
+}
+#about h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+#about p {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+#about a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: var(--primary);
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+#about a:hover {
+  background-color: var(--secondary);
+}
+#community {
+  padding: 50px 20px;
+  text-align: center;
+  height: 50vh;
+}
+#community h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+#community p {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+#community a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: var(--primary);
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+#community a:hover {
+  background-color: var(--secondary);
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid var(--secondary);
+}
+footer p {
+  color: var(--text-muted);
+}
+section {
+  padding: 80px 20px;
+  min-height: 60vh;
+}
+@media (max-width: 768px) {
+  /* NAVBAR */
+  nav {
+    width: 95%;
+    padding: 10px 15px;
+  }
+  nav .links a {
+    padding: 5px 8px;
+  }
+  nav .links {
+    gap: 10px;
+  }
+
+  nav .links a {
+    font-size: 14px;
+  }
+
+  /* HERO */
+  #home {
+    align-items: center;
+    text-align: center;
+  }
+
+  #home .jj {
+    margin-left: 0;
+    padding: 0 20px;
+    font-size: 28px;
+  }
+
+  /* GROUPS */
+  .card {
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* SECTIONS */
+  section {
+    height: auto;
+    padding: 60px 15px;
+  }
+
+  /* ABOUT + COMMUNITY */
+  #about {
+    margin-top: 300px;
+  }
+}
